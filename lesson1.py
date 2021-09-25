@@ -11,6 +11,7 @@
 # from random import randint # функция получения случайного числа
 # тернарный оператор - result=case**2 if case>3 else -case
 # new_str=my_str1[::-1]    # разворот строки
+# range(1,100) диапозо
 
 value = 5
 test = '2'
@@ -90,7 +91,7 @@ from random import randint # функция получения случайно�
 # path=f"{dirname}/{filename}"
 # print(path)
 
-# my_str1="qwerty"
+my_str1="Qwerty"
 # index=3           # -1 последний с конца строки
 # symbol=my_str1[index]
 # print(symbol)
@@ -101,5 +102,30 @@ from random import randint # функция получения случайно�
 # new_str=my_str1[2:]    # от 2 до конца
 # new_str=my_str1[0:index]+"k"+my_str1[index+1:]
 # new_str=my_str1[2:5:2]    # от 2 до 5 c шагом 2
-new_str=my_str1[::-1]    # разворот строки
-print(str_len, new_str)
+# new_str=my_str1[::-1]    # разворот строки
+# if my_str1[-1]=="a":
+#     print(f'последняя буква a в строк: {my_str1}')
+# else:
+#     print(f'последняя буква не a в строк: {my_str1}')
+# print(str_len, new_str)
+
+# циклы
+# for symbol in my_str1:
+#     if symbol in "EYUIOAeyuioa":
+#         print(symbol)
+# for symbol in my_str1:
+#     if (symbol not in "EYUIOAeyuioa") and symbol.isalpha():  # isalpha() проверка на буквы
+#         print(symbol)
+
+# for symbol in my_str1:
+#     if (symbol not in "EYUIOAeyuioa") and symbol.isalpha() and symbol.isupper():
+#         print(symbol)
+
+# for symbol in my_str1:
+#     print(f"symbol '{symbol}' --> {ord(symbol)}")
+
+# for index in range(100):
+#     print(f"index: '{index}' --> '{chr(index)}")
+
+# for index in range(32,ord('z')+1, 2):
+#     print(f"index: '{index}' --> '{chr(index)}")
