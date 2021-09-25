@@ -129,3 +129,14 @@ my_str1="Qwerty"
 
 # for index in range(32,ord('z')+1, 2):
 #     print(f"index: '{index}' --> '{chr(index)}")
+
+count=0
+# while count < 10:
+#     print('hello')
+#     count += 1
+do_loop= True
+while do_loop:
+    print('hello')
+    count += 1
+    if count>= 5:
+        do_loop=False
