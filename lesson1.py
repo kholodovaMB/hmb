@@ -134,9 +134,98 @@ count=0
 # while count < 10:
 #     print('hello')
 #     count += 1
-do_loop= True
-while do_loop:
-    print('hello')
-    count += 1
-    if count>= 5:
-        do_loop=False
+# do_loop= True
+# while do_loop:
+#     print('hello')
+#     count += 1
+#     if count>= 5:
+#         do_loop=False
+
+from random import randint
+
+# comp_value=randint(1, 10)
+# go_game = True
+# while go_game:
+#     cur_value=int(input("угадай число от 10 до 10:"))
+#     if cur_value == comp_value:
+#         go_game=False
+#         print("Победа!")
+
+# value=input("Введи число")
+# try:
+#     value_int=int(value)
+#     result=value_int*10
+#     print(result)
+# except ValueError:
+#     print("Єто не число")
+# except ZeroDivisionError:
+#     print("на 0 нельзя")
+
+# my_str="qwErty123"
+# for symbol in my_str:
+#     # if symbol.isalpha():
+#     if symbol.lower() in "eyuioa":
+#         print(symbol)
+
+# tuple кортежи и list - списки
+
+my_tuple=(1, -10, "qwe", True, 3.14, (-2, 0), ["a", "z"]) # не изменяевмий тип данних
+my_list= [1, -10, "qwe", True, 3.14, (-2, 0), ["a", "z"]] # изменяевмий тип данних
+# print(my_list, type(my_list))
+# print(my_tuple, type(my_tuple))
+# index=1
+# print(my_tuple[index])
+# print(len(my_tuple))
+
+# new_list=my_list[1::2]
+# print(new_list)
+# for value in my_list:
+#     print(value)
+
+# my_list[0]=56
+# my_tuple=(100, *my_tuple[1:])  # * - распаковка кортежа и списка
+# print(my_tuple)
+
+# val_1=12
+# val_2=21
+# val_2, val_1 = val_1, val_2
+# item= val_2, val_1
+# print(val_1, val_2)
+# print(item)
+# list_1= [1, 2]
+# list_2= [3, 4]
+# # new_list= [list_1, list_2]
+# new_list= [list_1, list_2[:]] # срез [:] - срез всегда копия данних
+# print(new_list)
+# list_1[0]= 100
+# list_2[0]= 300
+# print(new_list)
+
+#############
+# new_list= []
+# for symbol in "qwerty":
+#     new_list.append(symbol)
+# print(new_list)
+# new_list.append(1000)
+# print(new_list)
+# # new_list.pop()   # вырезает элемент .... () последний элемент
+# new_list.pop(4)  # вырезает элемент .... (4) 4 элемент
+# result= new_list.pop(4)
+# print(result)
+
+# new_list= list("qwerty")
+# new_list_1= ["qwerty"]
+# print(new_list)
+# print(new_list_1)
+# new_list= list("qwerty")
+# print(new_list)
+# new_str= "$".join(new_list)
+# print(new_str)
+
+file_name= "lesson1.txt"
+# file_name= file_name.replace(".txt", "")
+# file_name= file_name.split(".")
+# print(file_name)
+# file_name= file_name[:-1]
+file_name= file_name.rsplit(".", 1)[0]    # rsplit() сплит справа до 1 точки
+print(file_name)
