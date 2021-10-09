@@ -222,10 +222,138 @@ my_list= [1, -10, "qwe", True, 3.14, (-2, 0), ["a", "z"]] # изменяевми
 # new_str= "$".join(new_list)
 # print(new_str)
 
-file_name= "lesson1.txt"
+# file_name= "lesson1.txt"
 # file_name= file_name.replace(".txt", "")
 # file_name= file_name.split(".")
 # print(file_name)
 # file_name= file_name[:-1]
-file_name= file_name.rsplit(".", 1)[0]    # rsplit() сплит справа до 1 точки
-print(file_name)
+# file_name= file_name.rsplit(".", 1)[0]    # rsplit() сплит справа до 1 точки
+# print(file_name)
+
+# my_str="blablacar"
+# my_symbol="bla"
+
+# result=my_str.count(my_symbol)
+# for _ in range(result):
+#     print(my_symbol)
+
+# lower_str= my_str.lower()
+# unique_symbols=[]
+# for symbol in lower_str:
+#     if symbol not in unique_symbols:
+#         unique_symbols.append(symbol)
+# print(unique_symbols)
+
+my_str="fvhsdfvhksfvhksdfhvfhv"
+my_list=[]
+# new_str=my_str[::2]
+# # for symbol in new_str:
+# #     my_list.append(symbol)
+# my_list+= list(new_str)
+# print(my_list)
+# str_index = [6, 5, 7, 1, 4, 2, 3, 3]
+# my_list = []
+# for index in str_index:
+#     symbol= my_str[index]
+#     my_list.append(symbol)
+# print(my_list)
+
+##############
+# number= 839847835693623904
+# max_symbol = max(str(number))
+# print(max_symbol)
+
+#############
+# number= 839847835693623904
+# # my_str = str(number)
+# # result = int(my_str[::-1])
+# result = int(str(number)[::-1])  # то же самое
+# print(result)
+
+############
+# number= 839847835693623904
+# my_str = str(number)
+# sort_str = sorted(my_str, reverse=True)
+# new_number = "".join(sort_str)
+# print(int(new_number))
+#
+# my_list = [1, 5, 3, 8]
+# my_list.sort()
+# print(my_list)
+
+###############3
+# my_list_1 = [1, 3, 4, 6,]
+# my_list_2 = [5, 7, 8, 9,]
+# my_result = []
+
+# for index in range(len(my_list_1)):
+#     my_result.append(my_list_1[index])
+#     my_result.append(my_list_2[index])
+# print(my_result)
+
+###########
+# my_list_1 = [1, 3, 4, 6,]
+# my_list_2 = [5, 7, 8, 9, 2, 3]
+# my_result = []
+# min_len = min(len(my_list_1), len(my_list_2))
+# my_res = my_list_1[min_len:] + my_list_1[min_len:]
+# for index in range(min_len):
+#     my_result.append(my_list_1[index])
+#     my_result.append(my_list_2[index])
+# my_result.extend(my_res)
+# print(my_result)
+
+##################
+# ord() - фенкция возвращет код сивола
+# chr() -  возврат символа по коду
+
+#####    генератор списков list comprehension
+# alphabet = []
+# for index in range(ord('a'), ord('z')+1):
+#     alphabet.append(chr(index))
+# print(alphabet)
+# alphab="".join(alphabet)
+# print(alphab)
+
+alphabet = []
+# for index in range(ord('a'), ord('z')+1):
+#     alphabet.append(chr(index) )
+# alphabet = [chr(index) for index in range(ord('a'), ord('z')+1)]
+# alphab="".join(alphabet)
+# print(alphab)
+
+# result = [[x**2 for x in range(10)]]
+# print(result)
+
+# my_list = [2, 9, 34, 65, 7]
+# res = [value for value in my_list if value > 10]
+# print(res)
+
+# my_list = [2, 9, 34, 65, 7]
+# res = [value for value in my_list if value > 10]
+# print(res)
+
+######## set - множества
+# my_list = [1,2,3,4,5, 5, 5]
+# my_set = set(my_list)
+# print(my_set)
+
+# my_list = [1,2,3,4,5, 5, 5]
+# my_set = set(my_list)
+# my_set=list(my_set)
+# print(my_set)
+
+# my_list = [1,2,3,4,5, 5, 5]
+# my_set = set(my_list)
+# my_set.add(100)
+
+# my_str1="khdgaigflafhb;abna;"
+# my_str2="kjJUHGkjfvkjhdh"
+# my_str1_set = set(my_str1)
+# my_str2_set = set(my_str2)
+# my_set = my_str1_set.intersection(my_str2_set)
+# print(my_set)
+# my_set1 = my_str1_set.union(my_str2_set)
+# print(my_set1)
+# my_set2 = my_str1_set.difference(my_str2_set)
+# print(my_set2)
